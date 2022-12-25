@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v1",
   "version": "0.1.0",
+  "homepage": "https://sudhir9297.github.io/portfolio-v1",
   "private": true,
   "scripts": {
     "dev": "next dev",

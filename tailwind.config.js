@@ -1,5 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
-
+const { fontFamily, transitionProperty } = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -10,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)', ...fontFamily.sans],
         anton: 'Anton, sans-serif',
+      },
+      transitionProperty: {
+        width: 'width',
       },
     },
   },

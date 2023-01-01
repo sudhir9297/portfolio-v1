@@ -1,23 +1,8 @@
 import Head from 'next/head';
 import { useState, useEffect, useRef } from 'react';
-import LoadingAnimation from '../components/loadingAnimation';
-
-import { gsap, CSSPlugin, Expo } from 'gsap';
-gsap.registerPlugin(CSSPlugin);
-// import { Inter } from '@next/font/google'
-// const inter = Inter({ subsets: ['latin'] })
+import { Header } from '../components';
 
 export default function Home() {
-  const [num, setNum] = useState(0);
-
-  useEffect(() => {
-    // const count = setInterval(() => {
-    //   setNum((counter) =>
-    //     counter < 100 ? counter + 1 : (clearInterval(count), setNum(100))
-    //   );
-    // }, 25);
-  }, []);
-
   return (
     <>
       <Head>
@@ -26,11 +11,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="relative w-screen h-screen">
-        <LoadingAnimation animationgNumber={100} />
-        <div className="absoulte  w-full h-full top-0 left-0 z-0 bg-[#152A21] text-white">
-          Main Content
-        </div>
+      <main className="relative w-screen h-screen bg-[#152A21] text-white">
+        <Header />
       </main>
     </>
   );

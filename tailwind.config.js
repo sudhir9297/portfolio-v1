@@ -13,6 +13,21 @@ module.exports = {
       transitionProperty: {
         width: 'width',
       },
+
+      animation: {
+        marquee: 'marquee 12s linear infinite',
+        reverse: 'reverse 12s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        reverse: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
     },
   },
   plugins: [],

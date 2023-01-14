@@ -28,7 +28,7 @@ function Header() {
   return (
     <header id="header" className="pt-5 fixed top-0 w-full box-border">
       <div className="flex justify-between mx-7  pb-6">
-        <div className="text-4xl flex items-center font-sans font-medium">
+        <div className="text-4xl flex items-center font-anton font-medium">
           MISFIT.
         </div>
         <div className="flex justify-between items-center">

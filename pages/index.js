@@ -10,9 +10,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative w-screen h-fit bg-[#152A21] text-white flex flex-col justify-center items-center">
+      <div className="relative w-screen h-screen flex flex-col justify-center items-center">
         <Header />
-        <Marquee title="EXPLORE THE ARCHIVES" seperator duration={12} />{' '}
+        <Marquee title="EXPLORE THE ARCHIVES" seperator duration={12} />
       </div>
     </div>
   );
